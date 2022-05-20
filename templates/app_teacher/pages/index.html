@@ -1,54 +1,33 @@
 {% load static %}
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" href="{% static 'css/bootstrap/bootstrap.css' %}">
-    <link rel="stylesheet" href="{% static 'css/my.css' %}">
-    {% block head %}{% endblock head %}
-<!--    <link rel="stylesheet" href="https://1234">-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" href="/favicon.ico">
+    <title>applejq</title>
+
+      <link href="{% static 'js/about.fe6d4830.js' %}" rel="prefetch">
+      <link href="{% static 'css/app.d2ebd851.css' %}" rel="preload" as="style">
+      <link href="{% static 'js/app.8bc3bcff.js' %}" rel="preload" as="script">
+      <link href="{% static 'js/chunk-vendors.f4fa660e.js' %}" rel="preload" as="script">
+      
+    <link rel="stylesheet" href="{% static 'css/app.d2ebd851.css' %}">    
 </head>
-<body class="d-flex flex-column h-100">
-    {% block navbar %}{% endblock navbar %}
-    <div class="flex-shrink-0">
-        <main class="flex-shrink-0 bg-light">
-            <div class="container-fluid">
-                <div class="container">
-                    <div class="container-fluid">
-                        <div class="text-center">
-                            <div class="col-lg-6 mx-auto">
-                                ТЕЛО СТРАНИЦЫ
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </main>
-    </div>
-    {% block footer %}{% endblock footer %}
-    <script src="{% static 'js/bootstrap/bootstrap.js' %}"></script>
+
+<body><noscript><strong>We're sorry but applejq doesn't work properly without JavaScript enabled. Please enable it to
+            continue.</strong></noscript>
+    <div id="app"></div>    
+    <script src="{% static 'js/chunk-vendors.f4fa660e.js' %}"></script>
+    <script src="{% static 'js/app.8bc3bcff.js' %}"></script>
 </body>
+
 </html>
 
 
 
-{% extends "app_teacher/base.html" %}
-{% load static %}
 
-{% block main %}
-<main class="flex-shrink-0 bg-light">
-            <div class="container-fluid">
-                <div class="container">
-                    <div class="container-fluid">
-                        <div class="text-center">
-                            <div class="col-lg-6 mx-auto">
-                                ТЕЛО СТРАНИЦЫ
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </main>
-{% endblock main %}
+
